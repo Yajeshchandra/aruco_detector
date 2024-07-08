@@ -1,0 +1,6 @@
+<launch>
+    <node name="aruco_detector" pkg="aruco_detection" type="detection.py" output="screen">
+        <param name="marker_type" value="6x6" />
+        <param name="video_path" value="$(find aruco_detection)/videos/video1.mp4" />
+    </node>
+</launch>
